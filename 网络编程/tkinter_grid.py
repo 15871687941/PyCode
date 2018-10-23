@@ -1,0 +1,31 @@
+# encoding = utf-8
+from tkinter import *
+
+root = Tk()
+root.title("布局")
+# 创建控件
+frame_top = Frame(root, width=380, height=270, bg="green")
+frame_top.grid(row=0, column=0)
+frame_top.grid_propagate(0)
+text_A = Text(frame_top)
+text_A.grid()
+frame_center = Frame(root, width=380, height=100, bg="yellow")
+frame_center.grid(row=1, column=0)
+frame_center.grid_propagate(0)
+text_B = Text(frame_center)
+text_B.grid()
+frame_bottom = Frame(root, width=380, height=20, bg="red")
+frame_bottom.grid(row=2, column=0)
+frame_bottom.grid_propagate(0)
+enter_A = Entry(frame_bottom, width=40)
+enter_A.grid(sticky=W)
+button_A = Button(frame_bottom)
+button_A.grid(sticky=E)
+
+frame_right = Frame(root, width=170, height=400)
+frame_right.grid(row=0, column=1, rowspan=3)
+frame_right.grid_propagate(0)
+img = PhotoImage(file="暗黑元首(辛德拉).gif")
+label_photo = Label(frame_right, image=img)
+label_photo.grid()
+mainloop()

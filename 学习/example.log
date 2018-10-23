@@ -1,0 +1,4 @@
+WARNING:root:user [alex] attempted wrong password more than 3 times
+CRITICAL:root:server is down
+WARNING:root:user [alex] attempted wrong password more than 3 times
+CRITICAL:root:server is down
